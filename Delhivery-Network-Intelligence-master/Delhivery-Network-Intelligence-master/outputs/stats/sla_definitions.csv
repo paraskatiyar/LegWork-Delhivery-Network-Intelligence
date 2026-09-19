@@ -1,0 +1,4 @@
+definition,late_legs,late_rate_pct,total_excess_minutes,usable_for_ranking
+raw: actual > 1.2x OSRM,25005,94.83085558252428,2436153.2,no - fires on almost every leg
+"calibrated: actual > corridor promise x 1.15 (promise = OSRM x shrunk corridor median, train-fitted)",6873,26.06568567961165,418990.58933565253,yes - concentrates on genuine operational excess
+legs evaluated,26368,100.0,2905437.0,-

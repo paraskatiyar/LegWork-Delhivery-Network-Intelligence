@@ -1,0 +1,67 @@
+# Every assumption in the project lives here. Change a value, re-run the
+# affected stage, and the artifacts, figures, memo and appendix all move with
+# it -- the documents are generated from these numbers, not typed alongside
+# them.
+
+sla:
+  # The brief's definition. Reported for continuity; on this network it flags
+  # ~95% of legs, so it cannot rank anything.
+  ratio_threshold: 1.20
+  calibrate: true
+  calibration_quantile: 0.50
+  # Shrinkage strength for the corridor promise. A corridor seen fewer times
+  # than this borrows most of its promise from the network median.
+  min_legs_for_corridor_promise: 5
+  # Volume floor for a corridor to reach a priority list at all.
+  min_legs_for_priority: 30
+  # Median ratios above this are treated as data artifacts, not investment
+  # cases, and routed to a data-quality review instead.
+  artifact_ratio_ceiling: 6.0
+
+graph:
+  # A corridor needs this many training legs before it becomes a graph edge.
+  min_legs_per_edge: 3
+  winsor_lower: 0.01
+  winsor_upper: 0.99
+
+embed:
+  dim: 24
+  # node2vec
+  walk_length: 20
+  walks_per_node: 10
+  p: 1.0
+  q: 0.5          # q < 1 biases walks outward, toward structural roles
+  window: 5
+  negative: 5
+  epochs: 3
+  lr: 0.02
+  # GraphSAGE
+  sage_hidden: 32
+  sage_epochs: 60
+  sage_lr: 0.01
+  seed: 42
+
+cost:
+  # INVENTED. The dataset carries no cost column. These are stated here,
+  # printed with every result, and swept in the sensitivity analysis.
+  # Replace with the real rate card before acting on any recommendation.
+  ftl_fixed_inr: 2500.0
+  ftl_per_km_inr: 32.0
+  carting_fixed_inr: 450.0
+  carting_per_km_inr: 42.0
+  carting_handling_inr: 250.0
+  value_of_time_inr_per_min: 15.0
+  late_penalty_inr_per_min: 35.0
+
+revenue:
+  # Also assumptions. Reported as ranges, never as point forecasts.
+  revenue_per_leg_inr: 450.0
+  penalty_share_of_revenue: 0.10
+  penalty_share_low: 0.06
+  penalty_share_high: 0.14
+  # How much of a hub's excess dwell an upgrade actually removes.
+  excess_delay_recovery_rate: 0.50
+  recovery_low: 0.30
+  recovery_high: 0.65
+
+seed: 42

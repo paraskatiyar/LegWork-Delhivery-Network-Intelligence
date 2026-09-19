@@ -1,0 +1,2 @@
+raw_rows,legs_total,legs_with_summary_row,legs_without_summary_row,duplicate_summary_keys,reconciliation_exact_pct,reconciliation_median_abs_min,reconciliation_p95_abs_min,legs_after_filters,dropped_by_filters,train_legs,test_legs
+144867,26368,26117,251,1,34.91595512501436,1.0,7.0,26368,0,18947,7421

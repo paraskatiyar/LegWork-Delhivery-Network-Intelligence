@@ -1,0 +1,4 @@
+scenario,penalty_share_of_revenue,late_legs,revenue_per_leg_inr,revenue_at_risk_inr,revenue_at_risk_cr,revenue_at_risk_per_100k_legs_inr
+low,0.06,6873,450.0,185571.0,0.0185571,703773.5133495146
+central,0.1,6873,450.0,309285.0,0.0309285,1172955.8555825243
+high,0.14,6873,450.0,432999.00000000006,0.04329990000000001,1642138.1978155342

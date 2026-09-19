@@ -1,0 +1,16 @@
+parameter,multiplier,value,ftl_share_recommended_pct
+late_penalty_inr_per_min,0.5,17.5,1.1742602160638798
+late_penalty_inr_per_min,0.75,26.25,1.573508689525599
+late_penalty_inr_per_min,1.0,35.0,1.972757162987318
+late_penalty_inr_per_min,1.5,52.5,3.0061061531235325
+late_penalty_inr_per_min,2.0,70.0,3.781117895725693
+value_of_time_inr_per_min,0.5,7.5,1.5265382808830437
+value_of_time_inr_per_min,0.75,11.25,1.7144199154532647
+value_of_time_inr_per_min,1.0,15.0,1.972757162987318
+value_of_time_inr_per_min,1.5,22.5,2.6538280883043686
+value_of_time_inr_per_min,2.0,30.0,3.193987787693753
+ftl_per_km_inr,0.5,16.0,14.936589948332552
+ftl_per_km_inr,0.75,24.0,3.2409581963363085
+ftl_per_km_inr,1.0,32.0,1.972757162987318
+ftl_per_km_inr,1.5,48.0,1.1742602160638798
+ftl_per_km_inr,2.0,64.0,0.986378581493659

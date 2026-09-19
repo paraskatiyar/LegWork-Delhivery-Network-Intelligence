@@ -1,0 +1,6 @@
+comparison,question,mae_reduction_minutes,mae_reduction_pct,ci95_low,ci95_high,significant,within15_gain_pp
+osrm -> trip,Does any model beat the routing engine we ship today?,66.5001812577888,61.70250200850344,62.64702161206883,70.60479605940901,True,39.374747338633604
+trip -> corridor,Does knowing this lane's own history help?,9.109954541018581,22.07119021094285,7.459348709024342,10.771713597833468,True,12.572429591699233
+corridor -> structural,Does network position add beyond lane history?,0.18024697225972375,0.5603759378660275,0.006770073230905727,0.3460334367271495,True,-0.14822800161702787
+structural -> embedded,Do learned embeddings add beyond hand-built metrics?,0.03763198980080773,0.11765468055841567,-0.25469081764018264,0.3257838707645583,False,0.5659614607195778
+trip -> embedded,Total graph advantage over a non-graph model.,9.327833503079113,22.599057610604223,7.546233894071074,10.99854389292084,True,12.990163050801783
